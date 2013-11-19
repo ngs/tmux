@@ -20,9 +20,9 @@
 
 packages = case node['platform_family']
            when 'rhel'
-             %w(libevent-devel ncurses-devel gcc make)
+             %w(ncurses-devel gcc make)
            else
-             %w(libevent-dev libncurses5-dev gcc make)
+             %w(libncurses5-dev gcc make)
            end
 
 packages.each do |name|
